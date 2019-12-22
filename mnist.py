@@ -16,7 +16,7 @@ x_train, x_val, y_train, y_val = sklearn.model_selection.train_test_split(
 )
 
 # Instantiate the hyper model
-hyper_classifier = HyperClassifier(784, 10, depth=3, width=1000)
+hyper_classifier = HyperClassifier(784, 10, depth=4, width=1200)
 
 # Get the ensemble classifier
 classifier = hyper_classifier.ensemble(
